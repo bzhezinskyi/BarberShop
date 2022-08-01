@@ -1,0 +1,46 @@
+.subtitle {
+	position: relative;
+	margin-bottom: 20px;
+	padding-left: 80px;
+
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+
+	color: rgba(157, 164, 189, 0.6);
+
+	&::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 7px;
+		width: 60px;
+		height: 1px;
+
+		background: rgba(157, 164, 189, 0.6);
+		// transform: rotate(90deg);
+	}
+}
+
+.hero__title {
+	margin-bottom: 20px;
+
+	font-family: $secondary-font;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 1.17;
+	letter-spacing: 0.05em;
+	color: $white-txt-cl;
+}
+
+.text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.62;
+	letter-spacing: 0.02em;
+
+	color: $secondary-txt-cl;
+}

@@ -14,8 +14,30 @@
 		}
 	}
 
+	.hero {
+		background-image: url(../../imega/hero/hero-bg-mobal.jpg);
+		background-repeat: no-repeat;
+	}
+
 	.hero .container {
-		margin-top: 208px;
-		margin-bottom: 183px;
+		padding-top: 208px;
+		padding-bottom: 183px;
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.hero {
+		background-image: url(../../imega/hero/hero-bg-tablet.jpg);
+		background-repeat: no-repeat;
+		background-position: top right 39px;
+
+		& .container {
+			display: flex;
+		}
+	}
+	.side-left__list {
+		display: flex;
+		flex-direction: column-reverse;
 	}
 }

@@ -48,8 +48,8 @@ body {
   width: 320px;
   padding-left: 31px;
   padding-right: 31px;
-  margin-top: 84px;
-  margin-bottom: 84px;
+  padding-top: 84px;
+  padding-bottom: 84px;
 }
 
 @media screen and (min-width: 480px) {
@@ -80,6 +80,9 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+  .logo {
+    fill: #ffffff;
+  }
   .mobal-menu {
     display: none;
   }
@@ -93,8 +96,9 @@ body {
   .menu-btn__icon {
     width: 40px;
     height: 40px;
+    fill: #ffffff;
   }
-  .site-nav__item {
+  .site-nav__link {
     margin-bottom: 24px;
     font-weight: 600;
     font-size: 18px;
@@ -103,13 +107,13 @@ body {
     color: #303030;
     cursor: pointer;
   }
-  .site-nav__item:last-child {
+  .site-nav__link:last-child {
     margin-bottom: 64px;
   }
-  .site-nav__item:hover, .site-nav__item:focus {
+  .site-nav__link:hover, .site-nav__link:focus {
     color: #ff6c00;
   }
-  .site-nav__link {
+  .site-nav__tel {
     display: inline-block;
     margin-bottom: 24px;
     font-weight: 600;
@@ -118,12 +122,59 @@ body {
     letter-spacing: 0.1em;
     color: #303030;
   }
-  .site-nav__link:hover, .site-nav__link:focus {
+  .site-nav__tel:hover, .site-nav__tel:focus {
     color: #ff6c00;
   }
 }
 @media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 75px;
+  }
   .menu-btn {
+    display: none;
+  }
+  .header__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .mobal-menu {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #ffffff;
+  }
+  .mobal-menu .btn {
+    margin-left: auto;
+  }
+  .site-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .site-nav__item {
+    margin-right: 24px;
+  }
+  .site-nav__item:last-child {
+    margin-right: 0;
+  }
+  .site-nav__link {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: inherit;
+  }
+  .site-nav__link:hover, .site-nav__link:focus {
+    color: #ff6c00;
+  }
+  .site-nav__tel {
     display: none;
   }
 }
@@ -140,13 +191,39 @@ body {
   .side-left__item:last-child {
     margin-bottom: 0;
   }
+  .hero {
+    background-image: url(../../imega/hero/hero-bg-mobal.jpg);
+    background-repeat: no-repeat;
+  }
   .hero .container {
-    margin-top: 208px;
-    margin-bottom: 183px;
+    padding-top: 208px;
+    padding-bottom: 183px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url(../../imega/hero/hero-bg-tablet.jpg);
+    background-repeat: no-repeat;
+    background-position: top right 39px;
+  }
+  .hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .side-left__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 .btn {
-  padding: 12px 37px;
+  padding: 12px 20px;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.34;
@@ -155,6 +232,7 @@ body {
   border: 1px solid #ff6c00;
   border-radius: 25px;
   background-color: transparent;
+  color: inherit;
 }
 .btn:hover, .btn:focus {
   background-color: #ff6c00;
@@ -162,4 +240,43 @@ body {
 
 .btn__wite-txt {
   color: #ffffff;
+}
+
+.subtitle {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 80px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+}
+.subtitle::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 60px;
+  height: 1px;
+  background: rgba(157, 164, 189, 0.6);
+}
+
+.hero__title {
+  margin-bottom: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
 }/*# sourceMappingURL=main.css.map */
