@@ -1,9 +1,70 @@
+.header {
+	position: absolute;
+	top: 40px;
+	left: 31px;
+	right: 31px;
+}
+
 .logo {
 	width: 69px;
 	height: 56px;
 }
 
-.menu-btn__icon {
-	width: 40px;
-	height: 40px;
+@media screen and (max-width: 767px) {
+	.mobal-menu {
+		display: none;
+	}
+
+	.menu-btn {
+		position: absolute;
+		top: 0;
+		right: 0;
+		border: none;
+		background-color: transparent;
+	}
+
+	.menu-btn__icon {
+		width: 40px;
+		height: 40px;
+	}
+
+	.site-nav__item {
+		margin-bottom: 24px;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 1.39;
+		letter-spacing: 0.1em;
+		color: $title-txt-cl;
+		cursor: pointer;
+
+		&:last-child {
+			margin-bottom: 64px;
+		}
+
+		&:hover,
+		&:focus {
+			color: $accent-cl;
+		}
+	}
+
+	.site-nav__link {
+		display: inline-block;
+		margin-bottom: 24px;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 1.39;
+		letter-spacing: 0.1em;
+		color: $title-txt-cl;
+
+		&:hover,
+		&:focus {
+			color: $accent-cl;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.menu-btn {
+		display: none;
+	}
 }

@@ -1,0 +1,21 @@
+@media screen and (max-width: 767px) {
+	.side-left__item {
+		display: none;
+
+		margin-bottom: 24px;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 1.36;
+		letter-spacing: 0.2em;
+		color: $title-txt-cl;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.hero .container {
+		margin-top: 208px;
+		margin-bottom: 183px;
+	}
+}
