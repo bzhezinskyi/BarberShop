@@ -192,7 +192,7 @@ body {
     margin-bottom: 0;
   }
   .hero {
-    background-image: url(../../imega/hero/hero-bg-mobal.jpg);
+    background-image: url(../imega/hero/hero-bg-mobal.jpg);
     background-repeat: no-repeat;
   }
   .hero .container {
@@ -203,7 +203,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url(../../imega/hero/hero-bg-tablet.jpg);
+    background-image: url(../imega/hero/hero-bg-tablet.jpg);
     background-repeat: no-repeat;
     background-position: top right 39px;
   }
