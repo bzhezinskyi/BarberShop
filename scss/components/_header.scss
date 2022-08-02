@@ -1,6 +1,12 @@
 .header {
+	position: relative;
 	// header__container
-	&__contaainer {
+	&__container {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		padding-top: 40px;
 	}
 	// header__logo
 	&__logo {
@@ -10,12 +16,33 @@
 	}
 	// header__menu
 	&__menu {
+		@media screen and (max-width: 767px) {
+			display: none;
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+
+			padding-top: 118px;
+			padding-left: 40px;
+			width: 337px;
+			// height: 100%;
+			background-color: $main-bg-cl;
+
+			&.is-open {
+				display: block;
+			}
+		}
 	}
 	// header__site-nav
 	&__site-nav {
 	}
 	// header__tel
 	&__tel {
+		@media screen and (max-width: 767px) {
+			display: block;
+			margin-bottom: 24px;
+		}
 	}
 	// header__btn
 	&__btn {
@@ -25,16 +52,53 @@
 .logo {
 	// logo_-icon
 	&__icon {
+		width: 69px;
+		height: 55px;
+		@media screen and (max-width: 767px) {
+			fill: $white-txt-cl;
+		}
 	}
 }
 
 .mb-menu {
 	// mb-menu__btn
 	&__btn {
+		position: absolute;
+		top: 48px;
+		right: 31px;
+		background-color: transparent;
+		border: none;
+		z-index: 2;
+		fill: $white-txt-cl;
+
+		// mb-menu__btn-close
+		&-close {
+			display: none;
+		}
+
+		&.is-open {
+			.mb-menu__btn-menu {
+				display: none;
+			}
+			.mb-menu__btn-close {
+				display: block;
+				fill: $title-txt-cl;
+			}
+		}
+
+		@media screen and (min-width: 768px) {
+			display: none;
+		}
+
 		// mb-menu__btn-icon
 		&-icon {
+			width: 40px;
+			height: 40px;
 		}
 	}
+}
+body.menu__is-open {
+	overflow: hidden;
 }
 
 .site-nav {
@@ -43,6 +107,12 @@
 	}
 	// site-nav__item
 	&__item {
+		&:not(:last-child) {
+			margin-bottom: 24px;
+		}
+		&:last-child {
+			margin-bottom: 64px;
+		}
 	}
 	// site-nav__link
 	&__link {

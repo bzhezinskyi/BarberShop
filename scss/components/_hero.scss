@@ -1,4 +1,8 @@
 .hero {
+	padding-top: 208px;
+	padding-bottom: 183px;
+	background-image: url(../imega/hero/hero-bg-mobal.jpg);
+	background-repeat: no-repeat;
 	// hero__container
 	&__container {
 	}
@@ -11,14 +15,33 @@
 }
 
 .side-left {
+	@media screen and (max-width: 767px) {
+		position: absolute;
+		display: none;
+	}
 	// side-left__list
 	&__list {
 	}
 	// side-left__item
 	&__item {
+		&:first-child {
+		}
+		&:not(:last-child) {
+			margin-bottom: 24px;
+		}
 	}
 	// side-nav__link
 	&__link {
+	}
+}
+@media screen and (max-width: 767px) {
+	body.menu__is-open {
+		.side-left {
+			display: block;
+			z-index: 2;
+			top: 507px;
+			right: 105px;
+		}
 	}
 }
 

@@ -19,21 +19,21 @@
 	</head>
 	<body>
 		<header class="header">
-			<div class="header__container">
+			<div class="header__container container">
 				<a href="" class="header__logo link logo">
 					<svg class="logo__icon">
 						<use href="./imega/symbol-defs.svg#icon-logo"></use>
 					</svg>
 				</a>
 				<div class="header__mb-menu mb-menu">
-					<button type="button" class="mb-menu__btn">
+					<button type="button" class="mb-menu__btn" data-menu-button>
 						<svg class="mb-menu__btn-icon">
-							<use href="./imega/symbol-defs.svg#icon-menu"></use>
-							<use href="./imega/symbol-defs.svg#icon-close"></use>
+							<use href="./imega/symbol-defs.svg#icon-menu" class="mb-menu__btn-menu"></use>
+							<use href="./imega/symbol-defs.svg#icon-close" class="mb-menu__btn-close"></use>
 						</svg>
 					</button>
-					<div class="header__menu">
-						<nav class="header__site-nav">
+					<div class="header__menu" data-menu>
+						<nav class="header__site-nav site-nav">
 							<ul class="list site-nav__list">
 								<li class="site-nav__item">
 									<a href="" class="link site-nav__link">Про нас</a>
@@ -57,7 +57,7 @@
 		</header>
 		<main>
 			<section class="hero">
-				<div class="hero__container">
+				<div class="hero__container container">
 					<div class="hero__side-left side-left">
 						<ul class="list side-left__list">
 							<li class="side-left__item">
@@ -78,7 +78,7 @@
 				</div>
 			</section>
 			<section class="compani">
-				<div class="compani__container">
+				<div class="compani__container container">
 					<p class="compani__subtitel">ПРО НАС</p>
 					<h2 class="compani__titel">Найкращий Барбершоп твого міста</h2>
 					<p class="compani__text">Якщо ти хочеш додати у свій образ більше впевненості – тобі точно до нас.</p>
@@ -91,8 +91,8 @@
 				</div>
 			</section>
 			<section class="prise">
-				<div class="prise__container">
-					<p class="prise__subtitle"> Проведи час у компанії кращих майстрів </p>
+				<div class="prise__container container">
+					<p class="prise__subtitel"> Проведи час у компанії кращих майстрів </p>
 					<h2 class="prise__titel"> Послуги та ціни </h2>
 					<table class="prise__table">
 						<tbody>
@@ -138,8 +138,8 @@
 				</div>
 			</section>
 			<section class="benefits">
-				<div class="benefits__container">
-					<p class="benefits__subtitle">стара традиційна школа</p>
+				<div class="benefits__container container">
+					<p class="benefits__subtitel">стара традиційна школа</p>
 					<h2 class="benefits__titel">Чому приходять саме до нас?</h2>
 					<p class="benefits__text"> 
 						Про нас говорять лише добре. Але краще 1 раз побачити та відчути, ніж 10 разів прочитати.
@@ -153,11 +153,11 @@
 				</div>
 			</section>
 			<section class="team">
-				<div class="team__container">
-					<p class="team__subtitle">для справжніх поціновувачів атмосфери</p>
+				<div class="team__container container">
+					<p class="team__subtitel">для справжніх поціновувачів атмосфери</p>
 					<h2 class="team__titel">Наші майстри</h2>
 					<ul class="team__list list">
-						<li class="team__card">
+						<li class="team__card card">
 							<img class="card__img" src="" alt="" />
 							<h3 class="card__titel">John Smith</h3>
 							<p class="card__subtitel">Extreme Barber</p>
@@ -194,7 +194,7 @@
 				</div>
 			</section>
 			<section class="work">
-				<div class="work__container">
+				<div class="work__container container">
 					<p class="work__subtitle">Латинською мовою "барба" означає "борода"</p>
 					<h2 class="visually-hidden">Наші роботи</h2>
 					<ul class="work__list list">
@@ -207,16 +207,16 @@
 			</section>
 		</main>
 		<footer class="footer">
-			<div class="footer__container">
+			<div class="footer__container container">
 				<h2 class="footer__titel">Онлайн-запис</h2>
 				<form class="footer__form form">
-					<label>Ім'я*<input type="text" /></label>
-					<label>Телефон*<input type="tel" /></label>
-					<label>повідомлення <textarea name="comment"></textarea></label>
+					<label class="form__label">Ім'я*<input type="text" /></label>
+					<label class="form__label">Телефон*<input type="tel" /></label>
+					<label class="form__label">повідомлення <textarea name="comment"></textarea></label>
 				</form>
 				<button type="button" class="footer__btn btn">Надіслати</button>
 			</div>
-			<div class="footer__container">
+			<div class="footer__container container">
 				<h2 class="footer__titel">Контакти</h2>
 				<address class="footer__address address">
 					<ul class="address__list list">
@@ -242,5 +242,6 @@
 				</div>
 			</div>
 		</footer>
+		<script src="./js/mobile-menu.js"></script>
 	</body>
 </html>
