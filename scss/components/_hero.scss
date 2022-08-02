@@ -1,43 +1,35 @@
-@media screen and (max-width: 767px) {
-	.side-left__item {
-		display: none;
-
-		margin-bottom: 24px;
-		font-weight: 600;
-		font-size: 14px;
-		line-height: 1.36;
-		letter-spacing: 0.2em;
-		color: $title-txt-cl;
-
-		&:last-child {
-			margin-bottom: 0;
-		}
+.hero {
+	// hero__container
+	&__container {
 	}
-
-	.hero {
-		background-image: url(../imega/hero/hero-bg-mobal.jpg);
-		background-repeat: no-repeat;
+	// hero__side-left
+	&__site-left {
 	}
-
-	.hero .container {
-		padding-top: 208px;
-		padding-bottom: 183px;
-		width: 100%;
+	// hero__side-right
+	&__site-right {
 	}
 }
 
-@media screen and (min-width: 768px) {
-	.hero {
-		background-image: url(../imega/hero/hero-bg-tablet.jpg);
-		background-repeat: no-repeat;
-		background-position: top right 39px;
-
-		& .container {
-			display: flex;
-		}
+.side-left {
+	// side-left__list
+	&__list {
 	}
-	.side-left__list {
-		display: flex;
-		flex-direction: column-reverse;
+	// side-left__item
+	&__item {
+	}
+	// side-nav__link
+	&__link {
+	}
+}
+
+.side-right {
+	// side-right__subtitel
+	&__subtitel {
+	}
+	// side-right__titel
+	&__titel {
+	}
+	// side-right__text
+	&__text {
 	}
 }

@@ -1,23 +1,17 @@
-.container {
-	width: 320px;
-	padding-left: 31px;
-	padding-right: 31px;
-	padding-top: 84px;
-	padding-bottom: 84px;
-}
-
-@media screen and( min-width:480px) {
-	.container {
-		min-width: 480px;
+.compani {
+	// compani__container
+	&__container {
 	}
-}
-@media screen and( min-width:768px) {
-	.container {
-		min-width: 768px;
+	// compani__subtitel
+	&__subtitel {
 	}
-}
-@media screen and( min-width:1280px) {
-	.container {
-		min-width: 1280px;
+	// compani__titel
+	&__titel {
+	}
+	// compani__text
+	&__text {
+	}
+	// compani__btn
+	&__btn {
 	}
 }
