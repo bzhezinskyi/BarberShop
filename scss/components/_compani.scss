@@ -1,17 +1,110 @@
 .compani {
+	padding-top: 84px;
+	padding-bottom: 84px;
 	// compani__container
 	&__container {
+		@media screen and (min-width: 768px) {
+			display: flex;
+		}
+	}
+	// compani__img
+	&__img {
+		@media screen and (max-width: 767px) {
+			display: none;
+		}
+	}
+
+	// compani__list
+	&__list {
+		margin-right: 30px;
+		@media screen and (min-width: 768px) {
+			&-desctop {
+				display: none;
+			}
+		}
+		@media screen and (min-width: 1280px) {
+			margin-right: 64px;
+			&-tablet {
+				display: none;
+			}
+			&-desctop {
+				display: flex;
+			}
+		}
+	}
+	// compani__item
+	&__item {
+		@media screen and (min-width: 768px) {
+			width: 330px;
+			height: 235px;
+
+			&:not(:last-child) {
+				margin-bottom: 30px;
+			}
+		}
+		@media screen and (min-width: 1280px) {
+			width: 270px;
+			height: 445px;
+			&:not(:last-child) {
+				margin-right: 30px;
+			}
+		}
 	}
 	// compani__subtitel
 	&__subtitel {
+		position: relative;
+		margin-left: 80px;
+		margin-bottom: 20px;
+
+		font-weight: 600;
+		font-size: 11px;
+		line-height: 1.37;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: $title-txt-cl;
+		z-index: 1;
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: -80px;
+			top: 8px;
+			width: 60px;
+			height: 1px;
+			background-color: $title-txt-cl;
+		}
 	}
 	// compani__titel
 	&__titel {
+		margin-bottom: 20px;
+		font-family: $secondary-font;
+		font-weight: 700;
+		font-size: 28px;
+		line-height: 1.18;
+		letter-spacing: 0.05em;
+		color: $title-txt-cl;
+
+		@media screen and (min-width: 1280px) {
+			font-size: 42px;
+		}
 	}
 	// compani__text
 	&__text {
-	}
-	// compani__btn
-	&__btn {
+		margin-bottom: 20px;
+
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 1.62;
+		letter-spacing: 0.02em;
+		@media screen and (min-width: 1280px) {
+			font-size: 18px;
+		}
+
+		& + & {
+			margin-bottom: 40px;
+
+			font-size: 14px;
+			line-height: 1.86;
+		}
 	}
 }
