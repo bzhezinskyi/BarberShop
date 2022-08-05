@@ -1,41 +1,140 @@
 .team {
+	padding-top: 84px;
+	padding-bottom: 84px;
+
+	@media screen and (min-width: 768px) {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
+	@media screen and (min-width: 1280px) {
+		padding-top: 130px;
+		padding-bottom: 130px;
+	}
 	// team__container
 	&__container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 	// team__subtitel
 	&__subtitel {
+		width: 100%;
+		position: relative;
+		margin-left: 80px;
+		margin-bottom: 20px;
+
+		font-weight: 600;
+		font-size: 10px;
+		line-height: 1.37;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: $title-txt-cl;
+		z-index: 1;
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: -80px;
+			top: 8px;
+			width: 60px;
+			height: 1px;
+			background-color: $title-txt-cl;
+		}
 	}
 	// team__titel
 	&__titel {
+		width: 100%;
+		margin-bottom: 20px;
+		font-family: $secondary-font;
+		font-weight: 700;
+		font-size: 28px;
+		line-height: 1.18;
+		letter-spacing: 0.05em;
+		color: $title-txt-cl;
+
+		@media screen and (min-width: 1280px) {
+			font-size: 42px;
+		}
 	}
 	// team__list
 	&__list {
+		@media screen and (min-width: 1280px) {
+			display: flex;
+		}
 	}
 	// team__card
 	&__card {
+		@media screen and (max-width: 1279px) {
+			&:not(:last-child) {
+				margin-bottom: 64px;
+			}
+		}
+		@media screen and (min-width: 1280px) {
+			width: 370px;
+			&:not(:last-child) {
+				margin-right: 30px;
+			}
+		}
 	}
 }
 
 .card {
 	// card__img
 	&__img {
+		margin-bottom: 30px;
 	}
 	// card__titel
 	&__titel {
+		margin-bottom: 8px;
+		font-style: $secondary-font;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 25px;
+		text-align: center;
+		letter-spacing: 0.02em;
+		color: $title-txt-cl;
 	}
 	// card__subtitel
 	&__subtitel {
-	}
-	// card__social-list
-	&__social-list {
+		margin-bottom: 30px;
+		font-style: $secondary-font;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 25px;
+		text-align: center;
+		letter-spacing: 0.02em;
+
+		color: $accent-cl;
 	}
 }
 
 .social-list {
+	display: flex;
+	justify-content: center;
+
 	// social-list__item
 	&__item {
+		width: 44px;
+		height: 44px;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&:not(:last-child) {
+			margin-right: 10px;
+		}
 	}
-	// social-list__link
-	&__link {
+
+	// social-list__icon
+	&__icon {
+		width: 20px;
+		height: 20px;
+		fill: $title-txt-cl;
+
+		&:hover,
+		&:focus {
+			fill: $accent-cl;
+		}
 	}
 }
