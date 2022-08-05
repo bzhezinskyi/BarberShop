@@ -1056,6 +1056,15 @@ body.menu__is-open {
   }
 }
 .form__input {
+  width: 100%;
+  padding-bottom: 8px;
+  margin-bottom: 44px;
   background-color: transparent;
+  outline: none;
   border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+}
+.form__input:hover, .form__input:focus {
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
 }/*# sourceMappingURL=main.css.map */

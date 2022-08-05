@@ -64,8 +64,20 @@
 	}
 	// form__input
 	&__input {
+		width: 100%;
+		padding-bottom: 8px;
+		margin-bottom: 44px;
+
 		background-color: transparent;
+		outline: none;
 		border: none;
+		border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+
+		&:hover,
+		&:focus {
+			border-bottom: 1px solid $white-txt-cl;
+			color: $white-txt-cl;
+		}
 	}
 }
 
