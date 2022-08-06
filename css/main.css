@@ -1057,8 +1057,10 @@ body.menu__is-open {
 }
 @media screen and (min-width: 1280px) {
   .contacts__form-section {
-    width: calc((100% - 40px) / 2);
+    max-width: 600px;
     margin: 0;
+    padding-left: 0;
+    padding-right: 40px;
     padding-top: 130px;
     padding-bottom: 130px;
   }

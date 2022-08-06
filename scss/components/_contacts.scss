@@ -1,10 +1,13 @@
 .contacts {
 	background-color: $secondary-bg-cl;
 	@media screen and (min-width: 1280px) {
+		// max-width: 1280px;
 		display: flex;
 		justify-content: center;
 	}
-
+	// footer__container
+	&__container {
+	}
 	// contacts__form
 	&__form-section {
 		padding-top: 84px;
@@ -16,8 +19,10 @@
 		}
 
 		@media screen and (min-width: 1280px) {
-			width: calc((100% - 40px) / 2);
+			max-width: 600px;
 			margin: 0;
+			padding-left: 0;
+			padding-right: 40px;
 			padding-top: 130px;
 			padding-bottom: 130px;
 		}
