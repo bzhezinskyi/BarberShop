@@ -335,36 +335,60 @@
 					</ul>
 				</div>
 			</section>
+			<div class="contacts">
+				<section class="contacts__form-section container">
+					<h2 class="contacts__titel">Онлайн-запис</h2>
+					<form class="contacts__form form">
+						<label class="form__label">
+							<span class="form__text">ім'я*</span>
+							<input class="form__input" type="text" />
+						</label>
+						<label class="form__label">
+							<span class="form__text">Телефон*</span>
+							<input class="form__input" type="tel" />
+						</label>
+						<label class="form__label form__label-txt"> 
+							<span class="form__text">повідомлення</span>
+							<textarea class="form__input form__input-txt" name="comment"></textarea>
+						</label>
+						<button type="submit" class="form__btn btn">Надіслати</button>
+					</form>
+				</section>
+				<section class="contacts__info container">
+					<div class="contacts__box">
+						<h2 class="contacts__titel">Контакти</h2>
+						<address class="contacts__address address">
+							<ul class="address__list list">
+								<li class="address__item"> 
+									<svg class="address__icon">
+										<use href="./imega/symbol.svg#icon-map-pin"></use>
+									</svg>
+									<a href="" class="address__link link">вул. Василькова, 7А, Київ, 08132</a> 
+								</li>
+								<li class="address__item"> 
+									<svg class="address__icon">
+										<use href="./imega/symbol.svg#icon-phone"></use>
+									</svg>
+									<a href="tel:+380441111111" class="address__link link">+38 044 111 11 11</a> 
+								</li>
+								<li class="address__item"> 
+									<svg class="address__icon">
+										<use href="./imega/symbol.svg#icon-mail"></use>
+									</svg>
+									<a href="mailto:barbershop@email.com" class="address__link link">barbershop@email.com</a> 
+								</li>
+							</ul>
+						</address>
+					</div>
+					<div  class="contacts__box">
+						<p class="contacts__subtitel">час роботи</p>
+						<p class="contacts__text">Щоденно з 9:00 до 22:00</p>
+					</div>
+				</section>
+			</div>
 		</main>
 		<footer class="footer">
-			<div class="footer__container  container">
-				<h2 class="footer__titel">Онлайн-запис</h2>
-				<form class="footer__form form">
-					<label class="form__label"><input class="form__input" type="text" placeholder="Ім'я*" /></label>
-					<label class="form__label"><input class="form__input" type="tel" placeholder="Телефон*" /></label>
-					<label class="form__label"> <textarea name="comment" placeholder="повідомлення"></textarea></label>
-				</form>
-				<button type="button" class="footer__btn btn">Надіслати</button>
-			</div>
-			<div class="footer__container footer__container-bgi container">
-				<h2 class="footer__titel">Контакти</h2>
-				<address class="footer__address address">
-					<ul class="address__list list">
-						<li class="address__item"> 
-							<a href="" class="address__link link">вул. Василькова, 7А, Київ, 08132</a> 
-						</li>
-						<li class="address__item"> 
-							<a href="tel:+380441111111" class="address__link link">+38 044 111 11 11</a> 
-						</li>
-						<li class="address__item"> 
-							<a href="mailto:barbershop@email.com" class="address__link link">barbershop@email.com</a> 
-						</li>
-					</ul>
-				</address>
-				<p class="footer__subtitel">час роботи</p>
-				<p class="footer__text">Щоденно з 9:00 до 22:00</p>
-				
-			</div>
+			
 			<div class="footer__basement basement">
 					<p class="basement__text">&#169Copyright 2020</p>
 					<ul class="basement__list list">
