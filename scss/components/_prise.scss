@@ -65,17 +65,29 @@
 	}
 	// prise__table
 	&__table {
+		display: flex;
+		flex-direction: column;
 		margin-bottom: 50px;
 		width: 100%;
+		padding-top: 30px;
+		padding-bottom: 30px;
 
 		& tbody {
 			width: 100%;
-			padding: 30px;
+			padding-right: 30px;
+			padding-left: 30px;
+
+			@media screen and (max-width: 1279px) {
+				&:not(:last-child) {
+					margin-bottom: 20px;
+				}
+			}
 		}
 
 		background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 		@media screen and (min-width: 1280px) {
 			display: flex;
+			flex-direction: row;
 			justify-content: space-between;
 			& tbody {
 				padding-right: 40px;
@@ -91,11 +103,13 @@
 	&__line {
 		display: flex;
 		justify-content: space-between;
-		margin-bottom: 20px;
 
 		border-bottom: 1px;
-		width: 100%;
 		background-color: inherit;
+
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
 		@media screen and (min-width: 1280px) {
 			width: 505px;
 			justify-content: space-between;

@@ -2,6 +2,8 @@
 	padding-top: 84px;
 	padding-bottom: 84px;
 
+	background-color: $bg-cl;
+
 	@media screen and (min-width: 768px) {
 		padding-top: 100px;
 		padding-bottom: 100px;
@@ -121,6 +123,9 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
+		background-color: $white-txt-cl;
+		border-radius: 50%;
 		&:not(:last-child) {
 			margin-right: 10px;
 		}
